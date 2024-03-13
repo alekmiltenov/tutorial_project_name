@@ -1,0 +1,22 @@
+{% extends "tutorial_app_name1/common.html" %}
+{% block content %}
+    <h1>Home page</h1>
+<!-- The unique code about this page goes here -->
+    
+
+    <article class="media content-section">
+        <img 
+       class="rounded-circle" src ="{{ object.author.profile.image.url }}" style="max-width: 100px;padding: 0px;margin: 0px;">
+        <div class="media-body">
+          <div class="article-metadata">
+            
+            <a class="mr-2" href="#">{{ object.author }}</a>
+            <small class="text-muted">{{ object.date_posted}}</small>
+          </div>
+          <h2 class="article-title">{{ object.title }}</h2>
+          <p class="article-content" style="color: rgba(36, 28, 28, 0.826);">{{ object.content }}</p>
+        </div>
+      </article>
+
+    
+{% endblock content %}

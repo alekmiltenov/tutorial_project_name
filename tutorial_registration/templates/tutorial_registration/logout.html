@@ -1,0 +1,9 @@
+{% extends "tutorial_app_name1/common.html" %}
+{% block content %}
+        <h2>You have been logged out</h2>
+<div class="border-top pt-3">
+            <h1><a href="/">Back to the Home Page</a></h1>
+            <p style="color: black; text-align: center;">or</p>
+        <h4><a href="{% url 'login' %}">Log In Again</a></h4>
+</div>
+{% endblock content %}
